@@ -29,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        using_default = findViewById(R.id.using_custom);
+        using_default.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // start new activity
+                Intent intent = new Intent(MainActivity.this, CustomListViewActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -25,7 +25,7 @@ public class DefaultListViewActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        
+
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.default_list_row_item, languages);
         final ListView listView = (ListView) findViewById(R.id.list_view);
